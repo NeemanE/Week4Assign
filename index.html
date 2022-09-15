@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz!</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <section class="box">
+
+        <div id="quiz-home">
+            <h2>Coding Quiz</h2>
+            <h2>This quiz will challenge you with coding related questions! Answer as many as you can within the time
+                limit! Incorrect answers will deduct 10 seconds from your timer. Good luck!</h2>
+            <button id="start-button">Begin</button>
+            <button id="home-page-highscore" onclick="showScore()">View Highscores</button>
+        </div>
+
+        <div id="quiz">
+            <div id="timeRemaining">Time Remaining: </div>
+            <div id="quizQuestions">
+                <p>Questions</p>
+            </div>
+            <button id="a" onclick="validateAnswer('a')">A</button>
+            <button id="b" onclick="validateAnswer('b')">B</button>
+            <button id="c" onclick="validateAnswer('c')">C</button>
+            <button id="d" onclick="validateAnswer('d')">D</button>
+            <div id="results"></div>
+        </div>
+        <div id="quizFinish">
+
+            <div id="endScore"></div>
+            <input type="text" size="40" placeholder="Enter Name/Initials" name="initials" id="initials" />
+            <button id="submit-score">Submit your score!</button>
+        </div>
+        <div id=leaderboard-table>
+            <div id="leaderboards">
+                <div id="user-scores">
+                    <h3>Player</h3>
+                    <h3>Score</h3>
+                </div>
+                <div id="leaderboard-initials"></div>
+                <div id="leaderboard-score"></div>
+            </div>
+            <div id="promptButtons">
+                <button id="restartQuiz" onclick="restartQuiz()">Return to quiz homepage</button>
+                <button id="resetScore" onclick="resetScore()">Reset all scores</button>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
